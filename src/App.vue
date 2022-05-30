@@ -3,12 +3,14 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 import SelectDemo from './components/SelectDemo.vue'
+import SelectDemo2 from './components/SelectDemo2.vue'
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
   <SelectDemo />
+  <SelectDemo2 />
 </template>
 
 <style>
