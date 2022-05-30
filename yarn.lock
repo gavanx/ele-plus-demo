@@ -275,10 +275,27 @@ esbuild@^0.14.27:
     esbuild-windows-64 "0.14.42"
     esbuild-windows-arm64 "0.14.42"
 
+eslint-config-prettier@^8.5.0:
+  version "8.5.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
+  integrity sha1-WoFoDsk0vsoCx7GmHPjKNLZv6rE=
+
+eslint-plugin-prettier@^4.0.0:
+  version "4.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/eslint-plugin-prettier/-/eslint-plugin-prettier-4.0.0.tgz#8b99d1e4b8b24a762472b4567992023619cb98e0"
+  integrity sha1-i5nR5LiySnYkcrRWeZICNhnLmOA=
+  dependencies:
+    prettier-linter-helpers "^1.0.0"
+
 estree-walker@^2.0.2:
   version "2.0.2"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
   integrity sha1-UvAQF4wqTBF6d1fP6UKtt9LaTKw=
+
+fast-diff@^1.1.2:
+  version "1.2.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/fast-diff/-/fast-diff-1.2.0.tgz#73ee11982d86caaf7959828d519cfe927fac5f03"
+  integrity sha1-c+4RmC2Gyq95WYKNUZz+kn+sXwM=
 
 fsevents@~2.3.2:
   version "2.3.2"
@@ -339,6 +356,18 @@ postcss@^8.1.10, postcss@^8.4.13:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
+prettier-linter-helpers@^1.0.0:
+  version "1.0.0"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/prettier-linter-helpers/-/prettier-linter-helpers-1.0.0.tgz#d23d41fe1375646de2d0104d3454a3008802cf7b"
+  integrity sha1-0j1B/hN1ZG3i0BBNNFSjAIgCz3s=
+  dependencies:
+    fast-diff "^1.1.2"
+
+prettier@2.6.2:
+  version "2.6.2"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
+  integrity sha1-4m1xoYp0w9DwWX9V8B+2wGwgYDI=
 
 regenerator-runtime@^0.11.0:
   version "0.11.1"
