@@ -4,6 +4,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import SelectDemo from './components/SelectDemo.vue'
 import SelectDemo2 from './components/SelectDemo2.vue'
+import SelectDemo3 from './components/SelectDemo3.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import SelectDemo2 from './components/SelectDemo2.vue'
   <HelloWorld msg="Hello Vue 3 + Vite" />
   <SelectDemo />
   <SelectDemo2 />
+  <SelectDemo3 />
 </template>
 
 <style>
