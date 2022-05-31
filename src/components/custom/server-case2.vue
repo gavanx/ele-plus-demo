@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <span class="server-case">
     <Select
       :data="searchParams.env"
       placeholder="请选择环境"
@@ -39,6 +39,7 @@
       style="width: 148px"
       @changDateFn="instanceChange"
     />
+    <div>{{serverEnvList}}</div>
   </span>
 </template>
 
@@ -59,14 +60,12 @@ export default {
         instance: ['All'], // IP实例选中值
       },
       serverEnvList: {}, // 应用环境 - 应用 - IP映射列表
-      serviceOptions: null,
       instanceOptions: [], // 实例下拉选项
     }
   },
   watch: {
     data: {
       handler(data) {
-        console.log('handler', data)
         // 应用的环境、IP映射列表数据
         const param = {
           All: (data && (data.list || data.allIps)) || [],
@@ -94,11 +93,8 @@ export default {
       this.serverListHandle() // 应用数据处理
       for (let i = 0; i < this.searchParams.env.length; i++) {
         let serveList = this.serverEnvList[this.searchParams.env[i]]
-        console.log('serveList', serveList)
-        console.log('serveList.envIps', serveList.envIps)
-        const x = serveList.envIps || serveList
-        console.log('x', x)
-        list = [...list, ...x]
+        const list2 = serveList.envIps || serveList || []
+        list2.length ? list = [...list, ...list2] : ''
       }
       this.instanceOptions = list
     },
@@ -150,12 +146,15 @@ export default {
     },
     // 应用change事件
     serviceChange(val) {
+      this.searchParams.service = val;
       this.searchParams.instance = ['All']
       let list = []
       for (let i = 0; i < val.length; i++) {
-        list = [...list, ...this.serviceOptions[val[i]]]
+        const list2 = this.serviceOptions[val[i]] || []
+        list2.length ? list = [...list, ...list2] : ''
       }
-      this.instanceOptions = list
+      this.instanceOptions = list;
+      this.selectChange() // 改变grafana地址实例选中值
     },
     // 实例change事件
     instanceChange(val) {
@@ -169,3 +168,12 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.server-case >>> .select-env {
+  margin-right: -1px;
+}
+.server-case >>> .el-tag.el-tag--info .el-tag__close {
+  display: none;
+}
+</style>

@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "allIps": ["10.38.167.41"],
+    "envIpMapping": {
+      "staging": {
+        "envIps": ["10.38.167.41"],
+        "serviceList": {
+          "query_query_staging_falcon_inf_xiaomi": ["10.38.167.41"]
+        }
+      }
+    }
+  },
+  "success": true
+}

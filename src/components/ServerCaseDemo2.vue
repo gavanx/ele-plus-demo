@@ -1,15 +1,15 @@
 <template>
-  <ServerCase :data="serverList" @changDateFn="serverCaseChangFn" />
+  <ServerCase2 :data="serverList" @changDateFn="serverCaseChangFn" />
 </template>
 
 <script>
-import ServerCase from './custom/server-case.vue'
+import ServerCase2 from './custom/server-case2.vue'
 import servers from './data/servers.json'
 
 export default {
   name: 'dash-board',
   components: {
-    ServerCase,
+    ServerCase2,
   },
   data() {
     return {

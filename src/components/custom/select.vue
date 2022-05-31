@@ -148,8 +148,10 @@ export default {
       this.value = this.AllSelectChangeValue(val) // 选中值处理
     },
     // 处理实例选中数据
-    visibleChange() {
-      this.$emit('changDateFn', this.value)
+    visibleChange(visible) {
+      if (!visible) {
+        this.$emit('changDateFn', this.value)
+      }
     },
     // 勾选事件
     handleCheckedChange(val) {

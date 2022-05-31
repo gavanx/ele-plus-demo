@@ -6,15 +6,21 @@ import SelectDemo from './components/SelectDemo.vue'
 import SelectDemo2 from './components/SelectDemo2.vue'
 import SelectDemo3 from './components/SelectDemo3.vue'
 import ServerCaseDemo from './components/ServerCaseDemo.vue'
+import ServerCaseDemo2 from './components/ServerCaseDemo2.vue'
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
-  <SelectDemo />
+  <!-- <SelectDemo />
   <SelectDemo2 />
-  <SelectDemo3 />
-  <ServerCaseDemo />
+  <SelectDemo3 /> -->
+  <div>ServerCaseDemo
+    <!-- <ServerCaseDemo /> -->
+  </div>
+  <div>ServerCaseDemo2
+    <ServerCaseDemo2 />
+  </div>
 </template>
 
 <style>
