@@ -5,6 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import SelectDemo from './components/SelectDemo.vue'
 import SelectDemo2 from './components/SelectDemo2.vue'
 import SelectDemo3 from './components/SelectDemo3.vue'
+import ServerCaseDemo from './components/ServerCaseDemo.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import SelectDemo3 from './components/SelectDemo3.vue'
   <SelectDemo />
   <SelectDemo2 />
   <SelectDemo3 />
+  <ServerCaseDemo />
 </template>
 
 <style>
