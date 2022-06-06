@@ -1,6 +1,4 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+<template> 
   <SelectDemo />
   <SelectDemo2 />
   <SelectDemo3 /> 
@@ -11,7 +9,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './pages/Hello.vue'
 import SelectDemo from './components/SelectDemo.vue'
 import SelectDemo2 from './components/SelectDemo2.vue'
 import SelectDemo3 from './components/SelectDemo3.vue'

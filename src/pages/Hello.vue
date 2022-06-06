@@ -2,14 +2,14 @@
 import { ref } from 'vue'
 
 defineProps({
-  msg: String
+  msg: String,
 })
 
 const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>Hello Vue 3 + Vite</h1>
 
   <p>
     Recommended IDE setup:
@@ -19,9 +19,7 @@ const count = ref(0)
   </p>
 
   <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Documentation
-    </a>
+    <a href="https://vitejs.dev/guide/features.html" target="_blank"> Vite Documentation </a>
     |
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
