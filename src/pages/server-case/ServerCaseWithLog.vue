@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ServerCase2 from './custom/server-case2.vue'
+import ServerCase2 from './server-case2.vue'
 
 export default {
   name: 'dash-board',
@@ -28,7 +28,7 @@ export default {
       // this.searchParams.service = param.service
       // this.instance = param.instance
       // this.selectChange()
-      console.log(logName, param)
+      console.log(this.logName, param)
     },
   },
 }
