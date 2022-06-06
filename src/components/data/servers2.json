@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "allIps": ["10.167.50.65", "10.167.46.27"],
+    "envIpMapping": {
+      "staging": {
+        "envIps": ["10.167.50.65", "10.167.46.27"],
+        "serviceList": {
+          "17733_mi-oap-aggregator_mi-oap-aggregator-staging": ["10.167.50.65", "10.167.46.27"]
+        }
+      }
+    }
+  },
+  "success": true
+}

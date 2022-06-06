@@ -4,7 +4,7 @@
 
 <script>
 import ServerCase2 from './custom/server-case2.vue'
-import servers from './data/servers.json'
+import servers2 from './data/servers2.json'
 
 export default {
   name: 'dash-board',
@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      serverList: servers.data,
+      serverList: servers2.data,
     }
   },
   methods: {
