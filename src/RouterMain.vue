@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="menu">
-      <router-link to="/">home</router-link>
-      <router-link to="/hello">hello</router-link>
-      <router-link to="/about">about</router-link>
+      <router-link to="/About">About</router-link>
+      <router-link to="/Hello">Hello</router-link>
+      <router-link to="/SelectDemo">SelectDemo</router-link>
     </div>
     <div class="content">
       <router-view />
@@ -20,7 +20,7 @@
   padding: 10px;
 }
 .content {
-  background: lightblue;
+  padding: 10px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
