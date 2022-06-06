@@ -93,6 +93,11 @@
     "@vue/compiler-dom" "3.2.36"
     "@vue/shared" "3.2.36"
 
+"@vue/devtools-api@^6.0.0":
+  version "6.1.4"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@vue/devtools-api/-/devtools-api-6.1.4.tgz#b4aec2f4b4599e11ba774a50c67fa378c9824e53"
+  integrity sha1-tK7C9LRZnhG6d0pQxn+jeMmCTlM=
+
 "@vue/reactivity-transform@3.2.36":
   version "3.2.36"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/@vue/reactivity-transform/-/reactivity-transform-3.2.36.tgz#8426a941b0b09d1b94fc162d4642758183b5d133"
@@ -557,6 +562,13 @@ vue-demi@*:
   version "0.12.5"
   resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/vue-demi/-/vue-demi-0.12.5.tgz#8eeed566a7d86eb090209a11723f887d28aeb2d1"
   integrity sha1-ju7VZqfYbrCQIJoRcj+IfSiustE=
+
+vue-router@4:
+  version "4.0.15"
+  resolved "https://pkgs.d.xiaomi.net:443/artifactory/api/npm/mi-npm/vue-router/-/vue-router-4.0.15.tgz#b4a0661efe197f8c724e0f233308f8776e2c3667"
+  integrity sha1-tKBmHv4Zf4xyTg8jMwj4d24sNmc=
+  dependencies:
+    "@vue/devtools-api" "^6.0.0"
 
 vue@^3.2.25:
   version "3.2.36"
