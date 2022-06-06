@@ -10,7 +10,7 @@
       valueKey=""
       isShowCheckAll
       mutexOption="All"
-      style="width: 148px"
+      style="width: 198px"
       @changDateFn="envDataChange"
     />
     <Select
@@ -24,7 +24,7 @@
       valueKey=""
       isShowCheckAll
       mutexOption="All"
-      style="width: 148px"
+      style="width: 198px"
       @changDateFn="serviceChange"
     />
     <Select
@@ -36,7 +36,7 @@
       valueKey=""
       isShowCheckAll
       mutexOption="All"
-      style="width: 148px"
+      style="width: 198px"
       @changDateFn="instanceChange"
     />
     <div>{{serverEnvList}}</div>

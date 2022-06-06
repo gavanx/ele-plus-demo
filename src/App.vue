@@ -6,7 +6,8 @@ import SelectDemo from './components/SelectDemo.vue'
 import SelectDemo2 from './components/SelectDemo2.vue'
 import SelectDemo3 from './components/SelectDemo3.vue'
 import ServerCaseDemo from './components/ServerCaseDemo.vue'
-import ServerCaseDemo2 from './components/ServerCaseDemo2.vue'
+import server11 from './components/data/server-1-service-1-ip.json'
+import server12 from './components/data/server-1-service-1-ip.json'
 </script>
 
 <template>
@@ -15,11 +16,12 @@ import ServerCaseDemo2 from './components/ServerCaseDemo2.vue'
   <!-- <SelectDemo />
   <SelectDemo2 />
   <SelectDemo3 /> -->
-  <div>ServerCaseDemo
+  <div>
     <!-- <ServerCaseDemo /> -->
   </div>
-  <div>ServerCaseDemo2
-    <ServerCaseDemo2 />
+  <div>
+    <ServerCaseDemo log-name="server11" :data="server11" />
+    <ServerCaseDemo log-name="server12" :data="server12" />
   </div>
 </template>
 

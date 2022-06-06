@@ -1,20 +1,25 @@
 <template>
-  <ServerCase :data="serverList" @changDateFn="serverCaseChangFn" />
+  <ServerCase2 :data="data" @changDateFn="serverCaseChangFn" />
 </template>
 
 <script>
-import ServerCase from './custom/server-case.vue'
-import servers from './data/servers.json'
+import ServerCase2 from './custom/server-case2.vue'
 
 export default {
   name: 'dash-board',
   components: {
-    ServerCase,
+    ServerCase2,
+  },
+  props: {
+    logName: {
+      required: true,
+    },
+    data: {
+      required: true,
+    },
   },
   data() {
-    return {
-      serverList: servers.data,
-    }
+    return {}
   },
   methods: {
     serverCaseChangFn(param) {
@@ -23,7 +28,7 @@ export default {
       // this.searchParams.service = param.service
       // this.instance = param.instance
       // this.selectChange()
-      console.log('serverCaseChangFn', param)
+      console.log(logName, param)
     },
   },
 }
