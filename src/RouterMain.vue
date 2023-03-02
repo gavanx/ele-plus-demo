@@ -4,6 +4,7 @@
       <router-link to="/About">About</router-link>
       <router-link to="/Hello">Hello</router-link>
       <router-link to="/SelectDemo">SelectDemo</router-link>
+      <router-link to="/SelectDemo2ObjectModel">SelectDemo2ObjectModel</router-link>
       <router-link to="/ServerCaseDemo">ServerCaseDemo</router-link>
     </div>
     <div class="content">
