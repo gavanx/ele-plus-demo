@@ -13,3 +13,11 @@ const app = createApp(RouterMain)
 app.use(ElementPlus)
 app.use(router)
 app.mount('#app')
+
+import { renderList } from 'vue'
+
+// renderList = () => {
+//   console.log('xxxx')
+// }
+
+console.log(app, app.prototype, renderList)
